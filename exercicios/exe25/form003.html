@@ -6,6 +6,22 @@
     <title>Formulário</title>
 </head>
 <body>
+    <h1>Mais opções de formularios </h1>
+    <form action="cadastro.php" method="get">
+        <p><label for="user">
+            Usúario:
+        </label>
+        <input type="text" name="user" id="user" required placeholder="Nome do Usúario">
+    </p>
+    <p><label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" required placeholder="Sua Senha" minlength="8" >
+    </p>
+    <p><label for="data">Data de Nascencia:</label>
+        <input type="date" name="data" id="data" required>
     
+    </p>
+    <input type="submit" value="Enviar">
+
+    </form>
 </body>
 </html>
