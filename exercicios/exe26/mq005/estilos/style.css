@@ -61,7 +61,7 @@ a:hover{
     color: var(--cor1);
 }
 main{
-    width: 90vw;
+    width: 75%;
     background-color:var(--cor4);
     color: var(--cor1);
     margin: auto;
