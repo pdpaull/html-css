@@ -10,8 +10,8 @@
 <body>
     <header>
         <h1>Meu site</h1>
-        <span id="burguer" class="material-symbols-rounded">menu</span>
-        <menu>
+        <span id="burguer" class="material-symbols-rounded" onclick="clickMenu()">menu</span>
+        <menu id="opcao">
             <ul type="square">
                 <li><a href="#">Opcção 1</a></li>
                 <li><a href="#">Opcção 2</a></li>
@@ -32,5 +32,14 @@
                 </p>
         </article>
     </main>
+    <script>
+        function clickMenu(){
+            if (opcao.style.display == 'block')
+            opcao.style.display = 'none'
+            else{
+                opcao.style.display ='block'
+            }
+        }
+    </script>
 </body>
 </html>
