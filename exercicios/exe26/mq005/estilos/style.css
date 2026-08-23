@@ -79,3 +79,20 @@ article h2{
     text-align: center;
     padding-bottom: 10px;
 }
+
+@media screen and (min-width: 768px ) and (max-width: 1023px ) {
+    #burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu > ul > li {
+        display: inline-block;
+    }
+    main{
+        width: 768px;
+    }
+    
+    
+}
