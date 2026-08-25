@@ -17,6 +17,7 @@ html , body{
    background-color: var(--cor1);
    width: 98vw;
    height: 98vh;
+   overflow-y: hidden;
 }
 main{
     width: 320px;
