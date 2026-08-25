@@ -21,7 +21,7 @@ html , body{
 }
 main{
     width: 320px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 15px;
     box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.534) ;
     margin: auto;
     background-color: white;
@@ -36,8 +36,8 @@ main{
     background: url('../imagens/pexels-willian-santos-44398111-38545175.webp') no-repeat bottom left ;
     background-size: cover;
     margin: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius:10px ;
+    border-top-left-radius: 15px;
+    border-top-right-radius:15px ;
 }
 h1{
     text-align: center;
@@ -95,7 +95,35 @@ input{
     width: 200px;
     height: 35px;
     background-color: var(--cor2);
-    margin: auto;
-    
-    
+    margin: auto;   
 }
+@media screen and (min-width: 600px) and (max-width: 1024px)  {
+    html , body{
+        
+        width: 98vw;
+        height: 98vh;
+        background-image: linear-gradient( var(--cor1) , var(--cor4));
+    }
+    main{
+        width: 80vw;
+        height: 50vh;
+        
+    }
+    #imagem{
+        margin-left: 0px;
+        width: 200px;
+        height: 50vh;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+    }
+    article{
+        display: inline;
+        width: 80vw;
+        height: 50vh;
+        
+    }
+    h1{
+        display: inline;
+    }
+}
+
