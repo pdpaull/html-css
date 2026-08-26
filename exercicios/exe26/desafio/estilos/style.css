@@ -15,8 +15,8 @@
 }
 html , body{
    background-color: var(--cor1);
-   width: 98vw;
-   height: 98vh;
+   width: 100vw;
+   height: 100vh;
    overflow-y: hidden;
 }
 main{
@@ -80,6 +80,17 @@ span{
     color: white;
     border-radius: 10px;
 }
+#user{
+    background-color: white;
+    border: 0px;
+    border-radius: 8px;
+}
+#senha{
+     background-color: white;
+    border: 0px;
+    border-radius: 8px;
+}
+
 .senha-esquecida{
     text-align: center;
     margin-bottom: 10px;  
