@@ -12,30 +12,45 @@
             color: white;
         }
         .conteiner{
-            height: 400px;
             background-color: burlywood;
             display: flex;
-            flex-flow: row wrap;
-            align-content: space-around;
         }
         .item{
             background-color: aqua;
             border: 1px solid black;
             text-align: center;
-            padding: 40px;
-            
+            padding: 10px;
+           
+        }
+        #i1{
+            order: 0;
+        }
+        #i2{
+            order: 5;
+        }
+        #i3{
+            order: -4;
+        }
+        #i4{
+            order: 2;
+        }
+        #i5{
+            order: 0;
+        }
+        #i6{
+            order: 1;
         }
     </style>
 </head>
 <body>
     <h1>Flexxxxx</h1>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
     </div>
 </body>
 </html>
