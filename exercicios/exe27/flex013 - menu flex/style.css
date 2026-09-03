@@ -18,13 +18,20 @@ header{
     padding: 10px;
 
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 h1{
     border: 1px solid black;
+    flex: none;
 }
 nav{
     border: 1px solid black;
+
+    display: flex;
+    flex-flow:row wrap ;
+    justify-content: flex-end;
 }
 nav>a{
     background-color: black;
