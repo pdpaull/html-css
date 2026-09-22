@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <style>
-      .container {
-  max-width: 200px;
-  margin: auto;
-}
-
-.svg-circle:hover + .svg-text-group {
-  opacity: 0;
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: black;
+    }
+    @font-face {
+      font-family: my-cool-font;
+      src: url(../fonts/the-font-file.woff);
+    }
+    p{
+      font-family: 'my-cool-font' , sans-serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      line-height: 2rem;
+      letter-spacing: 2em;
+      text-align: justify;
+      text-shadow: #00ff62 2px 5px ;
+      color: white;
+      opacity: 0.33;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox=" 0 0 100 100">
-    <rect x=0 y=0 width=200 height=200 fill="burlywood"/>
-    <path d="M 10 10 H 90 V 90 L 10 60" fill="transparent" stroke="black" stroke-width="3"/>
-  <circle cx=50 cy=50 r=20 class="svg-circle"/>
-    <g class="svg-text-group">
-      <text x="20" y="25" rotate="10" id="hello-text">Mana não fala atua!</text>
-      <use href="#hello-text" x="-10" y="65" fill="white"/>
-    </g>
-</svg>
-</div>
-<img src="../imagens.svg" alt="Qualquer imagens">
+  <h1>Oi loco</h1>
+  <p>Vc é Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus id neque corrupti alias asperiores eos, provident sed expedita officiis quos perferendis ut nemo adipisci quae iusto quis fugiat tenetur placeat.</p>
 </body>
 </html>
