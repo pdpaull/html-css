@@ -7,26 +7,113 @@
   <style>
     body{
       background-color: black;
+      color: white;
+      font-family:sans-serif ;
     }
     @font-face {
       font-family: my-cool-font;
       src: url(../fonts/the-font-file.woff);
     }
+    h1::before{
+      content: '&#x1F62D ';
+    }
     p{
       font-family: 'my-cool-font' , sans-serif;
-      font-size: 1.3rem;
-      font-style: italic;
-      line-height: 2rem;
-      letter-spacing: 2em;
       text-align: justify;
-      text-shadow: #00ff62 2px 5px ;
+    }
+    p::first-line{
+      color: rgb(143, 17, 226);
+    }
+    p::selection{
+      background-color: fuchsia;
+    }
+    h1 , p{ 
       color: white;
-      opacity: 0.33;
+    }
+    a:focus , button:focus{
+      color: red;
+      text-decoration: none;
+    }
+    button{
+      color: rgb(0, 4, 255);
+      background: black;
+      border: 0;
+    }
+    a:visited{
+      text-decoration: none;
+      color: white;
+      background-color: red;
+    }
+    a:active{
+      background: gray;
+      display: block;
+      transition: background 0ms ,   ;
+    }
+    a:hover{
+      background-color: darkslateblue;
+      color: blanchedalmond;
+      text-decoration: none;
+    }
+    ul , ol{
+      display: flex;
+      gap: 5%;
+    }
+    ol > li{
+      display: flex;
+      flex-direction: column;
+    }
+    li{
+      padding: 10px;
+      
+    }
+    li::after{
+      content: '(T_T)';
+    }
+    li::first-letter{
+      color: brown;
+    }
+    li::marker{
+      font-size: 150%;
+      color: rgb(130, 139, 46);
+    }
+    div.p:empty{
+      height: 100px;
+      background-color: white;
+      display: none;
+      
+    }
+    [href$="s"]{
+      background-color: aliceblue;
     }
   </style>
 </head>
 <body>
-  <h1>Oi loco</h1>
-  <p>Vc é Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus id neque corrupti alias asperiores eos, provident sed expedita officiis quos perferendis ut nemo adipisci quae iusto quis fugiat tenetur placeat.</p>
+  <div class="p"></div>
+  <div>
+    <h1>Oi loco</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet sunt quam minima, est, beatae, quidem quasi facere officia maxime quas perspiciatis consectetur quo. Natus, facilis earum! Explicabo eos a officia!</p>
+    <p>Vc é Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus id neque corrupti alias asperiores eos, provident sed expedita officiis quos perferendis ut nemo adipisci quae iusto quis fugiat tenetur placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eaque, rerum corporis quia asperiores totam sed consectetur dolorum quae quidem eveniet animi exercitationem veritatis? Accusamus nobis voluptatibus quidem impedit doloremque. </p>
+    <a href="s#">Ola mada mer</a> <br>
+    <a href="youtsube.com" target="_blank">outa</a> <br>
+    <a href="#s">Ola burro</a>
+
+    <button>Clicue aqui amigo </button>
+  </div>
+  
+  <ul>
+    
+    <li>item 1</li>
+    <li>item 2</li> 
+    <li>irem 3</li>
+    <ol>
+      <li>item</li>
+      <li>item</li>
+      <li>item6</li>
+    </ol>
+  </ul>
+  <a href="sda">Oxiiiiiii</a>
+  <a href="#s">Oxiiiiiii</a>
+  <a href="sds">Oxiiiiiii</a>
+  <a href="#s">Oxiiiiiii</a>
 </body>
 </html>
