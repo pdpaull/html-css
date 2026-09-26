@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>min()</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            overflow: hidden;
+        }
+        #container {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 6px solid rgb(197, 8, 235);
+  resize: both;
+  overflow: auto;
+  max-width: 100%;
+  max-height: 100%;
+  
+}
+
+#iconHolder {
+  width: min(100px, 100%);
+  height: min(100px, 100%);
+  box-sizing: border-box;
+  border: 6px solid blue;
+}
+
+p {
+    margin-bottom: 100px;
+ 
+}
+    </style>
+</head>
+<body>
+    <p id="text">Resize me by dragging the bottom right corner</p>
+  <div id="container">
+    <img id="iconHolder" src="https://avatars.githubusercontent.com/u/4441966?s=200&v=4" alt="odin image" />
+  </div>
+</body>
+</html>
