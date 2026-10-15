@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <form action="#" method="get" autocomplete="on">
+        <label for="text">Escreva algo arronbado </label>
+        <input type="text" id="text" required minlength="4" placeholder="ESCREVE AQUI MALUCO "> <br>
+        <textarea rows="3" cols="30"> EScreve algo aqui </textarea>
+        <label for="numdetel">Digite aqui o seu número de telefone</label>
+        <input type="number" name="" id="numdetel" placeholder="Seu telefone "> <br>
+        <label for="car"> Escolha um carro 
+            <select name="car" id="car">
+                <option value="Tesla">Tesla</option>
+                <option value="Ferrari">Ferrari</option>
+                <option value="BMW"  >BMW</option>
+                <option value="Mercedes" selected>Mercedes</option>
+            </select>
+        </label> <br>
+        <label for="cantor"> Escolhe o seu Cantor Favorito :
+        <select name="cantor" id="cantor">
+            <optgroup label="Angola">
+                <option value="matias">Matias da Masio</option>
+                <option value="nga">NGA</option>
+                <option value="KMW">Kelson Most Wanted</option>
+            </optgroup>
+            <optgroup label="Outros">
+                <option value="drake" selected>Drake</option>
+                <option value="50cent">50cent</option>
+                <option value="Ladygaga">Lady GaGa</option>
+            </optgroup>
+        </select>
+        </label> <br>
+       <button type="submit">Enviar</button>
+       <button type="reset">Apagar</button>
+    </form>
+        <h1>Ticket Type</h1>
+            <div>
+            <input type="radio" id="child" name="ticket_type" value="child">
+            <label for="child">Child</label>
+            </div>
+
+            <div>
+            <input type="radio" id="adult" name="ticket_type" value="adult" checked>
+            <label for="adult">Adult</label>
+            </div>
+
+            <div>
+            <input type="radio" id="senior" name="ticket_type" value="senior">
+            <label for="senior">Senior</label>
+            </div> <br> <br>
+
+            <fieldset>
+                <legend>Seu nome</legend> <br>
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name"> <br> <br>
+
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name">
+            </fieldset>
+
+
+</body>
+</html>

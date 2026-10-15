@@ -25,8 +25,8 @@
 }
 
 #iconHolder {
-  width: min(100px, 100%);
-  height: min(100px, 100%);
+  max-width: max( 200px , 10% );
+  height: max( );
   box-sizing: border-box;
   border: 6px solid blue;
 }
@@ -35,6 +35,9 @@ p {
     margin-bottom: 100px;
  
 }
+p:last-child{
+  font-size: clamp( 1px , 5vw , 20px) ;
+}
     </style>
 </head>
 <body>
@@ -42,5 +45,6 @@ p {
   <div id="container">
     <img id="iconHolder" src="https://avatars.githubusercontent.com/u/4441966?s=200&v=4" alt="odin image" />
   </div>
+  <p>Ahmm pra que , pra fazer isso com a mavi , arroganthi</p>
 </body>
 </html>
